@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive List Styling</title>
+    <style>
+        ol li:first-child {
+            font-weight: bold; /* Requirement 2 */
+        }
+
+        ol li:first-child + li {
+            background-color: lightyellow; /* Requirement 3 */
+        }
+
+        ol li:nth-child(3) ~ li {
+            font-style: italic; /* Requirement 4 */
+        }
+
+        ol li:hover {
+            color: purple; /* Requirement 5 */
+            cursor: pointer; /* Optional: Add a visual cue for interactivity */
+        }
+    </style>
+</head>
+<body>
+
+    <ol>
+        <li>First item</li>
+        <li>Second item</li>
+        <li>Third item</li>
+        <li>Fourth item</li>
+        <li>Fifth item</li>
+        <li>Sixth item</li>
+    </ol>
+
+</body>
+</html>
